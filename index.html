@@ -95,28 +95,12 @@ footer a {
   color: white;
   border-color: #ccc;
 }
-[data-theme="dark"] .download-btn:hover,
-[data-theme="dark"] .download-btn:focus {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  border-color: #aaa;
-  color: white;
-}
-
 /* Light theme */
 [data-theme="light"] .download-btn {
   background: rgba(255, 255, 255, 0.8);
   color: #000;
   border-color: #000;
-}
-[data-theme="light"] .download-btn:hover,
-[data-theme="light"] .download-btn:focus {
-  background: rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(8px);
-  border-color: #000;
-  color: #000;
-}
-    .theme-toggle {
+}    .theme-toggle {
       margin-left: 1rem;
       padding: 0.3rem;
       background: rgba(255, 255, 255, 0.1);
@@ -526,11 +510,6 @@ nav a:hover {
   color: #000000;
   border: 1px solid #ccc;
 }
-[data-theme="light"] .download-btn:hover {
-  background: #e0e0e0;
-  border-color: #aaa;
-}
-
 [data-theme="light"] .fancy-item {
   box-shadow: none;
 }
@@ -595,6 +574,17 @@ nav a:hover {
 
 [data-theme="light"] #tools img {
   filter: none;
+}
+
+
+[data-theme="dark"] .download-btn:hover,
+[data-theme="dark"] .download-btn:focus {
+  backdrop-filter: blur(6px);
+}
+
+[data-theme="light"] .download-btn:hover,
+[data-theme="light"] .download-btn:focus {
+  backdrop-filter: blur(6px);
 }
 </style>
 <style>#services { scroll-margin-top: 100px; }</style><style>
