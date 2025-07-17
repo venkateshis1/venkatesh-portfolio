@@ -73,25 +73,49 @@ footer a {
   font-size: 1.2rem;
 }
     .download-btn {
+  display: inline-block;
   padding: 0.3rem 1rem;
   font-size: 0.85rem;
-  border: 1px solid #ccc;
+  font-weight: 500;
+  border: 1px solid;
   background: rgba(30, 30, 30, 0.6);
   backdrop-filter: blur(4px);
   color: white;
   cursor: pointer;
   border-radius: 999px;
-  transition: none;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  box-shadow: none;
 }
 
-.download-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+/* Dark theme (default) */
+[data-theme="dark"] .download-btn {
+  background: rgba(30, 30, 30, 0.6);
+  color: white;
   border-color: #ccc;
+}
+[data-theme="dark"] .download-btn:hover,
+[data-theme="dark"] .download-btn:focus {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-color: #aaa;
   color: white;
 }
-      background: rgba(255, 255, 255, 0.2);
-      border-color: white;
-    }
+
+/* Light theme */
+[data-theme="light"] .download-btn {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border-color: #000;
+}
+[data-theme="light"] .download-btn:hover,
+[data-theme="light"] .download-btn:focus {
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  border-color: #000;
+  color: #000;
+}
     .theme-toggle {
       margin-left: 1rem;
       padding: 0.3rem;
