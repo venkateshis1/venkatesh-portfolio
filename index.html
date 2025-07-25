@@ -627,6 +627,295 @@ nav a:hover {
 [data-theme="light"] #tools p {
   color: #000000 !important;
 }
+
+.circular-tool {
+  margin: 1rem;
+  width: 120px;
+}
+.circle img {
+  width: 50%;
+  height: 50%;
+}
+.circle .inner-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 2px #000;
+  z-index: 3;
+}
+
+.circular-tool {
+  margin: 1rem;
+  width: 120px;
+}
+.circle {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.circle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circle .inner-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 0 0 2px #000;
+  z-index: 3;
+}
+.circle img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.circular-tool {
+  margin: 1rem;
+  width: 120px;
+  text-align: center;
+}
+.circle {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.circle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circle svg circle {
+  stroke-linecap: round;
+}
+.circle img {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+  z-index: 2;
+}
+.circular-tool p {
+  margin-top: 135px;
+  color: white;
+  font-weight: 500;
+}
+
+.circular-tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+.circular-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+}
+.circle-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.circle-wrapper svg circle {
+  stroke-linecap: round;
+}
+.circle-content {
+  position: relative;
+  text-align: center;
+}
+.circle-content img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+}
+.circle-content .tool-inside-name {
+  color: white;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.circular-tool .tool-label {
+  margin-top: 12px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.circle-wrapper svg circle {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+}
+.circle-content img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 4px;
+  z-index: 2;
+}
+.circle-content .tool-inside-name {
+  color: white;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+#subscribe-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+#subscribe-section h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+#subscribe-section p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #111;
+  border-radius: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+.subscribe-box input {
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.subscribe-box button {
+  padding: 0.6rem 1.25rem;
+  border-radius: 2rem;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#collaborate-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  max-width: 800px;
+  text-align: center;
+}
+#collaborate-section h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+#collaborate-section p {
+  color: white;
+  margin-bottom: 1rem;
+}
+#collaborate-section form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#collaborate-section input,
+#collaborate-section textarea {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #444;
+  background: #000;
+  color: white;
+}
+#collaborate-section button {
+  align-self: center;
+  padding: 0.6rem 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+[data-theme="light"] .tool-label {
+  color: #000000 !important;
+}
+[data-theme="dark"] .tool-label {
+  color: #ffffff !important;
+}
+
+
+[data-theme="light"] .circle-wrapper svg circle {
+  stroke: #444 !important;
+  
+}
+[data-theme="dark"] .circle-wrapper svg circle {
+  stroke: #888 !important;
+  
+}
+
+
+[data-theme="light"] .circle-wrapper svg circle,
+[data-theme="dark"] .circle-wrapper svg circle {
+  stroke: #666 !important;
+  filter: none !important;
+  opacity: 0.6;
+  backdrop-filter: blur(4px);
+}
+
+
+[data-theme="light"] .circle-wrapper svg circle {
+  stroke: #000000 !important;
+  filter: none !important;
+  opacity: 1;
+  backdrop-filter: blur(4px);
+}
+[data-theme="dark"] .circle-wrapper svg circle {
+  stroke: #ffffff !important;
+  filter: none !important;
+  opacity: 1;
+  backdrop-filter: blur(4px);
+}
+
 </style>
 <style>#services { scroll-margin-top: 100px; }</style><style>
 #home, #services, #bio, #contact {
@@ -645,6 +934,34 @@ nav a:hover {
 [data-theme="dark"] #tools img {
   filter: brightness(0) invert(1);
 }
+</style><style>
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.circle svg circle {
+  stroke-dasharray: 282.6;
+  stroke-dashoffset: 282.6;
+  animation: progressAnim 2s ease-out forwards;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  
+}
+@keyframes progressAnim {
+  to {
+    stroke-dashoffset: var(--offset);
+  }
+}
+.circle .inner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
 </style></head>
 <body data-theme="dark">
 <header>
@@ -656,15 +973,7 @@ nav a:hover {
 <a class="download-btn" download="" href="Venkatesh_Resume.pdf">Download CV</a>
 </nav>
 </header>
-<div class="social-icons">
-<a href="https://instagram.com/venkatesh_design" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://linkedin.com/in/venkateshis1" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-<a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
-<a href="https://reddit.com" target="_blank"><i class="fab fa-reddit"></i></a>
-<a href="https://telegram.org" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-<a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
-<a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
-</div><section class="hero" id="home">
+<section class="hero" id="home">
 <img alt="Profile" class="profile-image" src="Pfp.jpg"/>
 <h1>Venkatesh</h1>
 <p>Graphic Designer &amp; Video Editor</p>
@@ -674,101 +983,63 @@ nav a:hover {
 <h2 style="font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.4;">About Me</h2>
 <p>Creative designer and video editor with a passion for turning ideas into compelling visuals. Skilled in storytelling, motion graphics, and content design for modern platforms.</p>
 </section>
-<section id="tools">
-<h2 style="font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.4;">What I Work With</h2>
-<div style="max-width: 650px; margin: 2rem 0;">
-<div style="margin-bottom: 2rem;">
-<div style="display: flex; align-items: center; gap: 1rem; justify-content: flex-start;">
-<img alt="Photoshop" src="photoshop.png" style="width: 36px; height: 36px; object-fit: contain;"/>
-<div>
-<strong style="font-size: 1.2rem;">Photoshop</strong>
-<p style="margin: 0; font-size: 0.9rem; color: #ccc;">Image editing, poster design</p>
+<section id="tools"><h2 style="text-align:center; font-size: 3rem; margin-bottom: 2rem;">What I Work With</h2><div class="circular-tools-grid">
+<div class="circular-tool">
+<div class="circle-wrapper">
+<svg height="120" width="120">
+<circle cx="60" cy="60" fill="none" r="50"  stroke-dasharray="314.2" stroke-dashoffset="22.6" stroke-width="8"></circle>
+</svg>
+<div class="circle-content">
+<img alt="Photoshop" src="photoshop.png"/>
 </div>
 </div>
-<div style="background: #444; border-radius: 999px; overflow: hidden; margin-top: 0.5rem; max-width: 400px;">
-<div class="skill-bar-fill" style="--target-width: 90%; width: 0;
-          background: rgba(255, 255, 255, 0.25);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          height: 10px;
-          border-radius: 999px;"></div>
+<div class="tool-label">Photoshop</div>
+</div>
+<div class="circular-tool">
+<div class="circle-wrapper">
+<svg height="120" width="120">
+<circle cx="60" cy="60" fill="none" r="50"  stroke-dasharray="314.2" stroke-dashoffset="33.9" stroke-width="8"></circle>
+</svg>
+<div class="circle-content">
+<img alt="Illustrator" src="illustrator.png"/>
 </div>
 </div>
-<div style="margin-bottom: 2rem;">
-<div style="display: flex; align-items: center; gap: 1rem; justify-content: flex-start;">
-<img alt="Illustrator" src="illustrator.png" style="width: 36px; height: 36px; object-fit: contain;"/>
-<div>
-<strong style="font-size: 1.2rem;">Illustrator</strong>
-<p style="margin: 0; font-size: 0.9rem; color: #ccc;">Logo and vector design</p>
+<div class="tool-label">Illustrator</div>
+</div>
+<div class="circular-tool">
+<div class="circle-wrapper">
+<svg height="120" width="120">
+<circle cx="60" cy="60" fill="none" r="50"  stroke-dasharray="314.2" stroke-dashoffset="42.4" stroke-width="8"></circle>
+</svg>
+<div class="circle-content">
+<img alt="Premiere Pro" src="premierepro.png"/>
 </div>
 </div>
-<div style="background: #444; border-radius: 999px; overflow: hidden; margin-top: 0.5rem; max-width: 400px;">
-<div class="skill-bar-fill" style="--target-width: 85%; width: 0;
-          background: rgba(255, 255, 255, 0.25);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          height: 10px;
-          border-radius: 999px;"></div>
+<div class="tool-label">Premiere Pro</div>
+</div>
+<div class="circular-tool">
+<div class="circle-wrapper">
+<svg height="120" width="120">
+<circle cx="60" cy="60" fill="none" r="50"  stroke-dasharray="314.2" stroke-dashoffset="56.5" stroke-width="8"></circle>
+</svg>
+<div class="circle-content">
+<img alt="After Effects" src="aftereffects.png"/>
 </div>
 </div>
-<div style="margin-bottom: 2rem;">
-<div style="display: flex; align-items: center; gap: 1rem; justify-content: flex-start;">
-<img alt="Premiere Pro" src="premiere-pro.png" style="width: 36px; height: 36px; object-fit: contain;"/>
-<div>
-<strong style="font-size: 1.2rem;">Premiere Pro</strong>
-<p style="margin: 0; font-size: 0.9rem; color: #ccc;">Video editing and transitions</p>
+<div class="tool-label">After Effects</div>
+</div>
+<div class="circular-tool">
+<div class="circle-wrapper">
+<svg height="120" width="120">
+<circle cx="60" cy="60" fill="none" r="50"  stroke-dasharray="314.2" stroke-dashoffset="70.6" stroke-width="8"></circle>
+</svg>
+<div class="circle-content">
+<img alt="Adobe Audition" src="audition.png"/>
 </div>
 </div>
-<div style="background: #444; border-radius: 999px; overflow: hidden; margin-top: 0.5rem; max-width: 400px;">
-<div class="skill-bar-fill" style="--target-width: 88%; width: 0;
-          background: rgba(255, 255, 255, 0.25);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          height: 10px;
-          border-radius: 999px;"></div>
+<div class="tool-label">Adobe Audition</div>
 </div>
-</div>
-<div style="margin-bottom: 2rem;">
-<div style="display: flex; align-items: center; gap: 1rem; justify-content: flex-start;">
-<img alt="After Effects" src="after-effects.png" style="width: 36px; height: 36px; object-fit: contain;"/>
-<div>
-<strong style="font-size: 1.2rem;">After Effects</strong>
-<p style="margin: 0; font-size: 0.9rem; color: #ccc;">Motion graphics &amp; animation</p>
-</div>
-</div>
-<div style="background: #444; border-radius: 999px; overflow: hidden; margin-top: 0.5rem; max-width: 400px;">
-<div class="skill-bar-fill" style="--target-width: 82%; width: 0;
-          background: rgba(255, 255, 255, 0.25);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          height: 10px;
-          border-radius: 999px;"></div>
-</div>
-</div>
-<div style="margin-bottom: 2rem;">
-<div style="display: flex; align-items: center; gap: 1rem; justify-content: flex-start;">
-<img alt="Adobe Audition" src="data:image/png;base64,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" style="width: 36px; height: 36px; object-fit: contain;"/>
-<div>
-<strong style="font-size: 1.2rem;">Adobe Audition</strong>
-<p style="margin: 0; font-size: 0.9rem; color: #ccc;">Audio editing &amp; sound design</p>
-</div>
-</div>
-<div style="background: #444; border-radius: 999px; overflow: hidden; margin-top: 0.5rem; max-width: 400px;">
-<div class="skill-bar-fill" style="--target-width: 75%; width: 0;
-          background: rgba(255, 255, 255, 0.25);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.4);
-          height: 10px;
-          border-radius: 999px;"></div>
-</div>
-</div>
-</div>
-</section>
+</div></section>
 <section id="portfolio">
 <h2 style="font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.4;">Pixels &amp; Frames</h2>
 <div class="portfolio-grid">
@@ -887,14 +1158,20 @@ nav a:hover {
 </a>
 </div>
 </section>
+
 <section id="newsletter">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+
 <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem; line-height: 1.2;">Stay in the Loop</h2>
 <p style="line-height: 1.4; font-size: 1.05rem; margin-bottom: 1.5rem;">Get updates on my latest projects, design tips, and freebies.</p>
 <div class="tool-item" style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
 <input placeholder="Your email" style="flex: 1; padding: 0.5rem 1rem; border-radius: 999px; border: none; min-width: 250px;" type="email"/>
 <button class="download-btn" type="submit">Subscribe</button>
 </div>
-</section><footer>
+
+</div>
+</section>
+<footer>
 <p style="font-size: 0.85rem; color: #888888;"><span style="font-size: 0.85rem; color: #888888;">Copyright © 2025 Venkatesh. All rights reserved.</span><a href="#" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="font-size: 0.85rem; color: #888888; text-decoration: none; margin-left: 0.75rem;">Terms of Use</a><span style="color: #888888;"> | </span><a href="#" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="font-size: 0.85rem; color: #888888; text-decoration: none;">Privacy Policy</a><span style="color: #888888;"> | </span><a href="#" onmouseout="this.style.textDecoration='none'" onmouseover="this.style.textDecoration='underline'" style="font-size: 0.85rem; color: #888888; text-decoration: none;">Agreements and Guidelines</a></p>
 <div style="position: fixed; bottom: 1rem; right: 1rem; z-index: 999;">
 <div class="theme-toggle-footer"><div class="slider"></div>
